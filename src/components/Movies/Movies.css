@@ -1,0 +1,49 @@
+.movies-search {
+  padding: 88px 70px 100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .movies-search {
+    padding: 88px 30px 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .movies-search {
+    padding: 88px 10px 99px;
+  }
+}
+
+.movies-search__more-button {
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #2f2f2f;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  padding: 11px 0;
+  cursor: pointer;
+}
+
+.movies-search__more-button:hover {
+  opacity: 0.8;
+}
+
+.movies-search__not-found {
+  min-height: 100vh;
+}
+
+.movies-search__not-found-text {
+  margin:0;
+  padding-top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #fff;
+}
+

@@ -1,0 +1,104 @@
+.movies__item {
+  width: 100%;
+  background: #222222;
+  border-radius: 6px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.movies__wrapper {
+  display: flex;
+  padding: 18px;
+  justify-content: space-between;
+}
+
+.movies__title {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.movies__duration {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #8b8b8b;
+}
+
+.movies__image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  object-position: center;
+  display: block;
+}
+
+.movies__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.movies__save-button {
+  background: #313131;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 11px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.movies__save-button:hover {
+  opacity: 0.8;
+}
+
+.movies__save-button_type_save::after {
+  content: 'Сохранить';
+}
+
+.movies__save-button_type_saved {
+  background-color: #EE3465;
+  background-image: url('../../images/mark.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 6.5px;
+}
+
+.movies__save-button_type_delete {
+  background-image: url('../../images/cross.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6.84px 6.72px;
+}
+
+@media (max-width:320px) {
+  .movies__title {
+    font-size: 12px;
+  }
+
+  .movies__duration {
+    font-size: 10px;
+  }
+
+  .movies__wrapper {
+    padding: 14px;
+  }
+
+  .movies__button-container {
+    padding: 14px 0;
+  }
+
+}
+
+
