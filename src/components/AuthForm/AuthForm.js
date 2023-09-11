@@ -15,7 +15,7 @@ function AuthForm({
 }) {
   return (
     <div className='auth'>
-      <h2 className='auth__title'>{title}</h2>
+      <h1 className='auth__title'>{title}</h1>
       <form className='form' name='register-form' onSubmit={onSubmit}>
         {children}
         <FormButton buttonTitle={buttonTitle} isValid={isValid}/>

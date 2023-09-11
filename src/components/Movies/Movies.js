@@ -24,7 +24,7 @@ function Movies({ isLoggedIn }) {
         ) : (
           <>
             <MoviesCardList />
-            <button className='movies-search__more-button'>Ещё</button>
+            <button type='button' className='movies-search__more-button'>Ещё</button>
           </>
         )}
       </main>

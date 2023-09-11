@@ -29,7 +29,7 @@ function Header({ isLoggedIn }) {
               Регистрация
             </Link>
             <Link to='/signin' className='header__menu-link'>
-              <button className='header__menu-link header__login-button'>
+              <button type='button' className='header__menu-link header__login-button'>
                 Войти
               </button>
             </Link>
@@ -75,7 +75,7 @@ function Header({ isLoggedIn }) {
                 />
               </Link>
             </div>
-            <button className='header__menu-burger' onClick={handleOpenMenu}>
+            <button type='button' className='header__menu-burger' onClick={handleOpenMenu}>
               <span className='header__menu-burger-item' />
             </button>
           </>

@@ -17,7 +17,7 @@ function Promo() {
         <img className='promo__image' alt='мир вэба' src={world} />
       </div>
       <a href='#about-project'>
-        <button className='promo__button'>Узнать больше</button>
+        <button type='button' className='promo__button'>Узнать больше</button>
       </a>
     </section>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './FormInput.css';
 
-function FormInput({ type, name, labelTitle }) {
+function FormInput({ type, name, labelTitle, placeholder }) {
   return (
     <>
       <label className='form__label'>{labelTitle}</label>
@@ -9,7 +9,7 @@ function FormInput({ type, name, labelTitle }) {
         className='form__input'
         type={type}
         name={name}
-        placeholder=''
+        placeholder={placeholder}
         required={true}
       />
     </>

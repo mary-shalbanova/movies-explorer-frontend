@@ -21,7 +21,7 @@ function MoviesCard({ movie }) {
         <h2 className='movies__title'>{movie.name}</h2>
         <span className='movies__duration'>{movie.duration}</span>
       </div>
-      <img src={movie.link} alt='карточка фильма' className='movies__image' />
+      <img src={movie.link} alt={movie.name} className='movies__image' />
       <div className='movies__button-container'>
         <button
           type='button'

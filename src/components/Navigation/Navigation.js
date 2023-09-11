@@ -8,7 +8,7 @@ function Navigation({ onClose, isOpenMenu }) {
   return (
     <section className={`sidebar ${isOpenMenu ? 'sidebar_opened' : ''}`}>
       <div className='sidebar__container'>
-        <button className='sidebar__close-button' onClick={onClose} />
+        <button type='button' className='sidebar__close-button' onClick={onClose} />
         <nav className='sidebar__menu'>
           <ul className='sidebar__menu-container'>
             <li>

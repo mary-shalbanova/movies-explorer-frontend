@@ -31,11 +31,11 @@ function Register() {
           onSubmit={handleSubmit}
           isValid={errorMessage ? false : true}
         >
-          <FormInput type='text' name='name' labelTitle='Имя' />
+          <FormInput type='text' name='name' labelTitle='Имя' placeholder='Иван' minLength={2} maxLength={30}/>
           <InputError errorMessage={errorMessage} />
-          <FormInput type='email' name='email' labelTitle='E-mail' />
+          <FormInput type='email' name='email' labelTitle='E-mail' placeholder='test@test.ru'/>
           <InputError errorMessage={errorMessage} />
-          <FormInput type='password' name='password' labelTitle='Пароль' />
+          <FormInput type='password' name='password' labelTitle='Пароль' placeholder='пароль' minLength={8} />
           <InputError errorMessage={errorMessage} />
         </AuthForm>
       </section>

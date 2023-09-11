@@ -10,8 +10,26 @@ function Footer() {
       <div className='footer__container'>
         <span className='footer__copyright'>&copy; 2020</span>
         <ul className='footer__links'>
-          <li className='footer__link'>Яндекс.Практикум</li>
-          <li className='footer__link'>Github</li>
+          <li className='footer__link'>
+            <a
+              className='footer__link-text'
+              href='https://practicum.yandex.ru/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Яндекс.Практикум
+            </a>
+          </li>
+          <li className='footer__link'>
+            <a
+              className='footer__link-text'
+              href='https://github.com/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Github
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

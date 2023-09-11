@@ -25,6 +25,10 @@
   width: 36px;
 }
 
+.toggle__visible-checkbox:hover {
+  opacity: 0.8;
+}
+
 .toggle__visible-checkbox::after {
   content: '';
   background: #fff;
@@ -46,10 +50,9 @@
   background: #a0a0a0;
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .toggle {
     column-gap: 13px;
     font-size: 11px;
   }
-
 }

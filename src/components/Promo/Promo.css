@@ -1,6 +1,6 @@
 .promo {
   background-color: #073042;
-  padding: 89px 70px 75px;
+  padding: 91px 70px 75px;
   display: flex;
   flex-direction: column;
   row-gap: 84px;
@@ -58,7 +58,7 @@
 
 @media (max-width: 985px) {
   .promo {
-    padding: 154px 70px 75px;
+    padding: 158px 70px 75px;
     align-items: center;
     row-gap: 92px;
   }
@@ -91,7 +91,7 @@
   }
 
   .promo__content {
-    row-gap: 44px;
+    row-gap: 47px;
   }
 
   .promo__title {
