@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Макет dark-4
 Проект на сервере: https://movies.mary.nomoredomainsicu.ru
-Pull request:
+Pull request: https://github.com/mary-shalbanova/movies-explorer-frontend/pull/2
