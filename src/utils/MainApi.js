@@ -8,6 +8,7 @@ export async function register(name, email, password) {
       headers: {
         'Content-Type': 'application/json',
       },
+      credentials: 'include',
       body: JSON.stringify({ name, email, password }),
     });
     if (res.ok) {
