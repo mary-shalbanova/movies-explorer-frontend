@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3001';
+// const BASE_URL = 'http://localhost:3001';
+const BASE_URL = 'https://api.movies.mary.nomoredomainsicu.ru';
 
 export async function register(name, email, password) {
   try {
