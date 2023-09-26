@@ -4,15 +4,8 @@
   line-height: 12px;
   color: #ee3465;
   padding-top: 6px;
-  visibility: hidden;
   min-height: 18px;
-}
-
-.form__error_type_profile {
-  text-align: center;
-  font-size: 11px;
-  line-height: 13.31px;
-  margin-bottom: 20px;
+  visibility: hidden;
 }
 
 .form__error_visible {

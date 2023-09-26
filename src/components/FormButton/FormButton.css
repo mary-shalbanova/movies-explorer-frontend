@@ -17,19 +17,23 @@
 .form__submit-button_disabled {
   background: #f8f8f8;
   color: #c2c2c2;
-  cursor: auto;
+  pointer-events: none;
 }
 
 .form__submit-button:hover {
   opacity: 0.8;
 }
 
-.form__submit-button_type_signup {
+/* .form__submit-button_type_signup {
   margin-top: 127px;
 }
 
 .form__submit-button_type_signin {
   margin-top: 196px;
+} */
+
+.form__submit-button_type_profile {
+  width: 410px;
 }
 
 @media (max-width: 424px) {
