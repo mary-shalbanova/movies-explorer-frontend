@@ -41,6 +41,24 @@
   color: #8b8b8b;
 }
 
+.form__button-wrapper_type_signin {
+  margin-top: 196px;
+}
+
+.form__button-wrapper_type_signup {
+  margin-top: 127px;
+}
+
+.form__server-error {
+  text-align: center;
+  min-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ee3465;
+  /* line-height: 17px; */
+}
+
+
 @media (max-width: 424px) {
   .auth__title {
     text-align: center;

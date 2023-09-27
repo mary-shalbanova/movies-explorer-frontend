@@ -20,22 +20,14 @@ function Header({ isLoggedIn }) {
   }
 
   return (
-    <header className={`header page__header ${location.pathname === '/' ? 'header_type_main' : ''}`}>
+    <header
+      className={`header page__header ${
+        location.pathname === '/' ? 'header_type_main' : ''
+      }`}
+    >
       <Logo />
       <nav className='header__menu'>
-        {!isLoggedIn && (
-          <div className='header__menu-container'>
-            <Link to='/signup' className='header__menu-link'>
-              Регистрация
-            </Link>
-            <Link to='/signin' className='header__menu-link'>
-              <button type='button' className='header__menu-link header__login-button'>
-                Войти
-              </button>
-            </Link>
-          </div>
-        )}
-        {isLoggedIn && (
+        {isLoggedIn ? (
           <>
             <div className='header__menu-wrapper'>
               <ul className='header__menu-container header__menu-container_type_authorized'>
@@ -75,10 +67,28 @@ function Header({ isLoggedIn }) {
                 />
               </Link>
             </div>
-            <button type='button' className='header__menu-burger' onClick={handleOpenMenu}>
+            <button
+              type='button'
+              className='header__menu-burger'
+              onClick={handleOpenMenu}
+            >
               <span className='header__menu-burger-item' />
             </button>
           </>
+        ) : (
+          <div className='header__menu-container'>
+            <Link to='/signup' className='header__menu-link'>
+              Регистрация
+            </Link>
+            <Link to='/signin' className='header__menu-link'>
+              <button
+                type='button'
+                className='header__menu-link header__login-button'
+              >
+                Войти
+              </button>
+            </Link>
+          </div>
         )}
       </nav>
       <Navigation onClose={handleCloseMenu} isOpenMenu={isOpenMenu} />

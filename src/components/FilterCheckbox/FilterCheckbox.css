@@ -16,7 +16,7 @@
 }
 
 .toggle__visible-checkbox {
-  background: #3ddc84;
+  background: #343434;
   border-radius: 20px;
   cursor: pointer;
   display: flex;
@@ -31,10 +31,10 @@
 
 .toggle__visible-checkbox::after {
   content: '';
-  background: #fff;
+  background: #a0a0a0;
   border-radius: 50%;
   top: 6px;
-  left: 22px;
+  right: 22px;
   height: 8px;
   width: 8px;
   position: absolute;
@@ -42,12 +42,12 @@
 }
 
 .toggle__invisible-checkbox:checked + .toggle__visible-checkbox {
-  background: #343434;
+  background: #3ddc84;
 }
 
 .toggle__invisible-checkbox:checked + .toggle__visible-checkbox::after {
-  transform: translateX(-16px);
-  background: #a0a0a0;
+  transform: translateX(16px);
+  background: #fff;
 }
 
 @media (max-width: 450px) {

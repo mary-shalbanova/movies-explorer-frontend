@@ -33,8 +33,9 @@
   border-bottom: 1px solid #424242;
 }
 
-.profile__field-wrapper:last-child {
+.profile__field-wrapper:last-of-type {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .profile__form-label {
@@ -61,10 +62,34 @@
   border-radius: 4px;
 }
 
+.profile__error {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #ee3465;
+  padding-top: 6px;
+  min-height: 18px;
+  visibility: hidden;
+}
+
+.profile__error_visible {
+  visibility: visible;
+}
+
 .profile__link {
   text-decoration: none;
   display: block;
   text-align: center;
+}
+
+.profile__confirm-message {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #ee3465;
+  text-align: center;
+  min-height: 30px;
 }
 
 .profile__button {
